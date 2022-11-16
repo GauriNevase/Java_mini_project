@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopeitworks.patientdetailscontroller">
+   <top>
+      <HBox prefHeight="51.0" prefWidth="1009.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="214.0" styleClass="shadow" text="Patient's Info">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="58.0" prefWidth="735.0">
+               <children>
+                  <Label fx:id="Alertbox" alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="550.0" textFill="#cd0707">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="206.0" styleClass="container" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="212.0" styleClass="container" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../images/person.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="143.0" styleClass="shadow" stylesheets="@styles.css" text="   Kainaat Zaidi">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="218.0" styleClass="line-color" stylesheets="@styles.css" text="    --------------------------------------" />
+            <VBox prefHeight="449.0" prefWidth="206.0" styleClass="container" stylesheets="@styles.css">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/chart_bar.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onDashboardButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Dashboard" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/observation.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onBedInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Bed Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/health_worker_form.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onPatientInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Patient's Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="149.0" prefWidth="206.0" />
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="48.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/icons8-logout-64.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#Logout" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Logout" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="612.0" styleClass="container" stylesheets="@styles.css" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="612.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="356.0" styleClass="shadow" stylesheets="@styles.css" text="ENTER PATIENT'S INFORMATION" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="98.0" styleClass="shadow" stylesheets="@styles.css" text="            Date:" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="usernameTextField16" prefHeight="25.0" prefWidth="133.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="608.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="177.0" text="   Enter Patient's Name :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField10" prefHeight="25.0" prefWidth="155.0" promptText="First Name" />
+                  <HBox prefHeight="66.0" prefWidth="46.0" />
+                  <TextField fx:id="usernameTextField18" prefHeight="25.0" prefWidth="155.0" promptText="Last Name" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="58.0" prefHeight="46.0" prefWidth="612.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="203.0" text="   Enter Patient's Mobile No :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField11" prefHeight="25.0" prefWidth="218.0" promptText="+91" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="58.0" prefHeight="52.0" prefWidth="608.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="177.0" text="   Enter Patient's Age :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField12" prefHeight="25.0" prefWidth="82.0" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="66.0" prefWidth="180.0" text="   Enter Patient's Gender :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="usernameTextField13" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="124.0" prefHeight="51.0" prefWidth="610.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="177.0" text="   Enter Relative's Name :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField14" prefHeight="25.0" prefWidth="412.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="58.0" prefHeight="50.0" prefWidth="610.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="208.0" text="   Enter Relative's Mobile No :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField15" prefHeight="25.0" prefWidth="217.0" promptText="+91" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="322.0" prefHeight="72.0" prefWidth="612.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="122.0" text="   Enter Bed_ID :" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField17" prefHeight="26.0" prefWidth="78.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="612.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#generalbed" prefHeight="52.0" prefWidth="126.0" text="general" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#emergencybed" prefHeight="52.0" prefWidth="122.0" text="Emergency" />
+                  <Button layoutX="113.0" layoutY="10.0" mnemonicParsing="false" onAction="#ICUbed" prefHeight="52.0" prefWidth="126.0" text="ICU" />
+                  <Button layoutX="216.0" layoutY="10.0" mnemonicParsing="false" onAction="#PrivateA" prefHeight="52.0" prefWidth="118.0" text="Private A" />
+                  <Button layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#PrivateB" prefHeight="52.0" prefWidth="119.0" text="Private B" />
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="612.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="151.0" text="Suggested Bed :" textFill="#037c7c">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="ta" prefHeight="42.0" prefWidth="143.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="816.0" styleClass="shadow" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="35.0" prefWidth="164.0" styleClass="container" stylesheets="@styles.css" text="Cancel" textFill="#037c7c">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="67.0" prefWidth="59.0" />
+            <Button mnemonicParsing="false" onAction="#Enroll" prefHeight="34.0" prefWidth="164.0" styleClass="container" stylesheets="@styles.css" text="Enroll " textFill="#037c7c">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <HBox layoutX="939.0" layoutY="10.0" prefHeight="67.0" prefWidth="92.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

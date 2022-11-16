@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" styleClass="gradient-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopeitworks.HelloController">
+   <top>
+      <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="214.0" styleClass="shadow" text="Revenue Generation">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="58.0" prefWidth="735.0" />
+            <ImageView fitHeight="60.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/person@2x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="549.0" prefWidth="206.0" styleClass="container" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="212.0" styleClass="container">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../images/person.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="143.0" styleClass="shadow" text="   Kainaat Zaidi">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="218.0" styleClass="line-color" text="    --------------------------------------" />
+            <VBox prefHeight="419.0" prefWidth="207.0" styleClass="container">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/chart_bar.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onDashboardButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" text="Dashboard" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/observation.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onBedInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" text="Bed Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/health_worker_form%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onPatientInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" text="Patient's Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/money_bag.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onRevenueButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" text="Revenue" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="226.0" spacing="10.0" styleClass="shadow" stylesheets="@styles.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <TextField prefHeight="28.0" prefWidth="226.0" text="Search  Bar">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="28.0" prefWidth="226.0" />
+            <VBox alignment="CENTER" prefHeight="318.0" prefWidth="226.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" styleClass="container" text="Generate Revenue" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" styleClass="container" text="Filter" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="561.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="122.0" prefWidth="561.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="199.0" text="Revenue Information" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="563.0">
+              <columns>
+                <TableColumn prefWidth="43.0" text="SR.NO" />
+                <TableColumn prefWidth="69.0" text="Patient ID" />
+                  <TableColumn prefWidth="135.0" text="Patient Name" />
+                  <TableColumn prefWidth="75.0" text="Addmission" />
+                  <TableColumn prefWidth="75.0" text="Discharge" />
+                  <TableColumn prefWidth="89.0" text="Extra Supplies" />
+                  <TableColumn prefWidth="75.0" text="Revenue" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </center>
+</BorderPane>

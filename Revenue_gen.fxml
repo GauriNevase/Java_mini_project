@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" styleClass="gradient-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopeitworks.HelloController">
+   <top>
+      <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="214.0" styleClass="shadow" text="Revenue">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="58.0" prefWidth="735.0" />
+            <ImageView fitHeight="60.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/person@2x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="549.0" prefWidth="206.0" styleClass="container" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="212.0" styleClass="container" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../images/person.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="143.0" styleClass="shadow" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="   Kainaat Zaidi">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="218.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="    --------------------------------------" />
+            <VBox prefHeight="419.0" prefWidth="207.0" styleClass="container" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/chart_bar.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onDashboardButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="Dashboard" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/observation.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onBedInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="Bed Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/health_worker_form%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onPatientInfoButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="Patient's Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/money_bag.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onRevenueButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" text="Revenue" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="260.0" spacing="10.0" styleClass="shadow" stylesheets="@../IdeaProjects/primary1/src/main/resources/styles.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <TextField prefHeight="28.0" prefWidth="260.0" text="Search  Bar">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="84.0" prefWidth="260.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onRevenue2ButtonClick" prefHeight="36.0" prefWidth="262.0" styleClass="container" text="Generate Revenue " textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="289.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/bills.png" />
+                     </image>
+                  </ImageView>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="254.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="238.0" text="    89,675/-" textFill="TEAL">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="231.0" text="   Total Revenue Generated Today" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="305.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/chart_line_stacked.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="100.0" prefWidth="217.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="238.0" text="   26,78,655/-" textFill="TEAL">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="231.0" text="Avg. Revenue Generated In This Month" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/coins.png" />
+                     </image>
+                  </ImageView>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="187.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="257.0" text="19,67,009/-" textFill="TEAL">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="186.0" text="Hospital's Earnings" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="520.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <LineChart maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="494.0" title="Revenue Generated This Month" titleSide="BOTTOM">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

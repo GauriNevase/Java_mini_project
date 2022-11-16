@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="500.0" maxWidth="583.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" spacing="20.0" style="-fx-background-color: #faebd7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopeitworks.logincontroller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1009.0">
+      <children>
+         <ImageView fitHeight="545.0" fitWidth="985.0" layoutX="40.0" layoutY="14.0" opacity="0.42" pickOnBounds="true" smooth="false">
+            <image>
+               <Image url="@../../../images/patient-bed-hospital-ward-doctor-nurse-provide-medical-care_102902-3127.jpg" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+         </ImageView>
+         <Pane cacheShape="false" centerShape="false" layoutX="701.0" layoutY="-3.0" opacity="0.95" prefHeight="529.0" prefWidth="288.0" scaleShape="false" style="-fx-background-color: #f3f4f4;" styleClass="containersignup" stylesheets="@styles.css">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <children>
+               <PasswordField fx:id="conpassfield" layoutX="55.0" layoutY="333.0" prefHeight="25.0" prefWidth="178.0" promptText="Confirm Password" />
+               <PasswordField fx:id="passField" layoutX="55.0" layoutY="298.0" prefHeight="26.0" prefWidth="178.0" promptText="Set Password" />
+               <TextField fx:id="usernameTextField1" layoutX="55.0" layoutY="225.0" prefHeight="25.0" prefWidth="178.0" promptText="USERNAME" />
+               <Text fx:id="passwordlabel" fill="#037c7c" layoutX="62.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Password">
+                  <font>
+                     <Font name="Berlin Sans FB" size="15.0" />
+                  </font>
+               </Text>
+               <Text fx:id="usernamelabel" fill="#037c7c" fontSmoothingType="LCD" layoutX="61.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter User Name">
+                  <font>
+                     <Font name="Berlin Sans FB" size="15.0" />
+                  </font>
+               </Text>
+               <Button cancelButton="true" layoutX="43.0" layoutY="367.0" mnemonicParsing="false" onAction="#Signup2" prefHeight="28.0" prefWidth="203.0" styleClass="container" stylesheets="@../../../images/styles.css" text="Sign Up" textFill="#037c7c" textOverrun="WORD_ELLIPSIS">
+                  <font>
+                     <Font name="Berlin Sans FB" size="17.0" />
+                  </font></Button>
+               <Button cancelButton="true" layoutX="48.0" layoutY="412.0" mnemonicParsing="false" onAction="#SignIn1" prefHeight="28.0" prefWidth="203.0" styleClass="container" stylesheets="@../../../images/styles.css" text="Already a User? Sign In" textFill="#037c7c" textOverrun="WORD_ELLIPSIS">
+                  <font>
+                     <Font name="Berlin Sans FB" size="18.0" />
+                  </font>
+               </Button>
+               <Label fx:id="AlertBox" layoutX="48.0" layoutY="490.0" prefHeight="28.0" prefWidth="203.0" textFill="#bf1818">
+                  <font>
+                     <Font name="Berlin Sans FB" size="18.0" />
+                  </font>
+               </Label>
+               <Text fx:id="usernamelabel1" fill="#037c7c" fontSmoothingType="LCD" layoutX="62.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Last Name">
+                  <font>
+                     <Font name="Berlin Sans FB" size="15.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="usernameTextField3" layoutX="55.0" layoutY="158.0" prefHeight="25.0" prefWidth="178.0" promptText="USERNAME" />
+               <TextField fx:id="usernameTextField2" layoutX="55.0" layoutY="86.0" prefHeight="25.0" prefWidth="178.0" promptText="USERNAME" />
+               <Text fx:id="usernamelabel11" fill="#037c7c" fontSmoothingType="LCD" layoutX="62.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter First Name">
+                  <font>
+                     <Font name="Berlin Sans FB" size="15.0" />
+                  </font>
+               </Text>
+               <Label prefHeight="48.0" prefWidth="288.0" styleClass="shadow" stylesheets="@styles.css" text="   Signup Page" textFill="#037c7c">
+                  <font>
+                     <Font name="Berlin Sans FB" size="22.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <HBox layoutX="-2.0" layoutY="-44.0" prefHeight="37.0" prefWidth="1009.0" />
+      </children>
+   </AnchorPane>
+</VBox>
